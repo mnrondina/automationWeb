@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos.css">
-    <title>Document</title>
+    <title>Calculadora Modular Web</title>
 </head>
 <body>
     <h1 id="titulo-principal">Calculadora Modular</h1>
@@ -12,15 +12,19 @@
     <form id="form-calculadora" action="#" method="post">
         Numero 1 <input type="text" name="num1" placeholder="Ingrese un número" id="num1">
         Numero 2 <input type="text" name="num2" placeholder="Ingrese un número" id="num2">
-        <div><input type="radio" name="suma" id="suma">
-        Resta<input type="radio" name="resta" id="resta">
-        Multiplicación<input type="radio" name="multiplicacion" id="multiplicacion">
-        División<input type="radio" name="division" id="division">
+        <div class="operaciones">
+            <label for="suma">Suma</label>
+            <input type="radio" name="operacion" id="suma">
+            <label for="resta">Resta</label>
+            <input type="radio" name="operacion" id="resta">
+            <label for="multiplicacion">Multiplicación</label>
+            <input type="radio" name="operacion" id="multiplicacion">
+            <label for="division">División</label>
+            <input type="radio" name="operacion" id="division">
+        
         </div>
-        <input type="button" value="Enviar" id="btnenviar">
-        
-        
 
+        <input type="button" value="Enviar" id="btnenviar">
     </form>
     
 </body>
