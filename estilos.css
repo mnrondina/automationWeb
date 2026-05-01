@@ -1,3 +1,15 @@
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header p
+{
+    margin-bottom: 40px;
+}
+
 form 
 {
     display: flex;
@@ -17,11 +29,30 @@ form
     
 }
 
+.operaciones 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    user-select: none;
+}
 
-.operaciones label
+.fila-operaciones label
 {
     cursor: pointer;
+    min-width: 80px
+    
+
+    
 }
+
+.fila-operaciones
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 #btnenviar:hover /* efecto cuando pasa el mouse */
 {
