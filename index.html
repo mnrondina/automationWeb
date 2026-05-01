@@ -7,11 +7,19 @@
     <title>Calculadora Modular Web</title>
 </head>
 <body>
-    <h1 id="titulo-principal">Calculadora Modular</h1>
-    <p>Sistema de cálculos básicos</p>
+    <header>
+        <h1 id="titulo-principal">Calculadora Modular</h1>
+        <p>Sistema de cálculos básicos</p>
+    </header>
+
     <form id="form-calculadora" action="#" method="post">
-        Numero 1 <input type="text" name="num1" placeholder="Ingrese un número" id="num1">
-        Numero 2 <input type="text" name="num2" placeholder="Ingrese un número" id="num2">
+        
+        <label for="num1">Número 1</label>
+        <input type="text" name="num1" placeholder="Ingrese un número" id="num1">
+        
+        <label for="num2">Número 2</label>
+        <input type="text" name="num2" placeholder="Ingrese un número" id="num2">
+        
         <div class="operaciones">
             <label for="suma">Suma</label>
             <input type="radio" name="operacion" id="suma">
@@ -21,6 +29,7 @@
             <input type="radio" name="operacion" id="multiplicacion">
             <label for="division">División</label>
             <input type="radio" name="operacion" id="division">
+        
         </div>
         <input type="button" value="Enviar" id="btnenviar">
     </form>
